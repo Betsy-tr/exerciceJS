@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO boucles</title>
+</head>
+<body>
+   
+    <script>
+
+        /*  EXERCICE 11 : If (une chaîne de caractère avec zéro)   */
+
+        if("0"){
+            alert('hello') ;
+        }
+
+	    // Oui l'alert est affichée
+
+
+
+        /*  EXERCICE 12 : Le nom JavaScript   */
+
+        let nomOfficiel = prompt('Quest est le nom officiel de JavaScript') ; 
+
+        if (nomOfficiel === "ECMAScript") {
+
+            alert("Bonne réponse !") ;
+
+        } else {
+            
+        }alert("Ne sait pas ? ECMAScript") ;
+
+
+
+        /*  EXERCICE 13 : Afficher le signe   */
+
+        let nombre = prompt('Saisissez un nombre')
+        
+        if(nombre > 0){
+
+            alert('1');
+
+        }else if(nombre < 0){
+
+            alert('-1'); 
+
+        }else{
+                
+            alert('0');
+        }
+
+
+        /*  EXERCICE 14 : Réécrire "if" en "?"   */
+
+        let result ;
+        let a = 1 ;
+        let b = 6 ;
+
+        result = (a + b < 4)?'Below':'over';
+        console.log(result);
+
+        /*  EXERCICE 15 : Réécrire "if..else" en "?"   */
+
+        let message ; 
+        let login ;
+
+        login = 'Employee' ;
+        login = 'Director' ;
+        login = '';
+
+        login = prompt('Saisissez un statut')
+
+        message = (login == 'Employee')?'Hello':(login == 'Director')?'Greetings':(login == '')?'No login':'';
+        alert(message);
+        
+        
+            
+        
+
+       
+
+         
+
+    </script>
+
+</body>
+</html>

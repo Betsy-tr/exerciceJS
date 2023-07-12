@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO OR et AND</title>
+</head>
+<body>
+    
+    <script>
+
+        /*  EXERCICE 16 : Quel est le résultat de OR   */
+
+        alert(null || 2 || undefined) ; // Le code va ressortir la valeur 2
+
+
+
+        /*  EXERCICE 17 : Quel est le résultat des alertes OR   */
+
+        alert(alert(1) || 2 || alert(3)) ; // Le code va ressortir en premier la valeur 1 puis la valeur 2
+
+
+
+        /*  EXERCICE 18 : Quel est le résultat de AND  */
+
+        alert(1 && null && 2) ;  // Le code va ressortir la valeur null
+
+
+
+        /*  EXERCICE 19 : Quel est le résultat des alertes AND  */
+
+        alert(alert(1) && alert(2)) ; // Le code va ressortir la valeur 1 puis il va affiché undefined
+
+
+
+        /*  EXERCICE 20 : Le résultat de OR AND OR  */
+
+        alert(null || 2 && 3 || 4) ; // Le code va ressortir la valeur 3 
+
+
+
+        /*  EXERCICE 21 : Vérifier la plage entre  */
+
+        let age = prompt('Saisissez votre age') ;
+
+        if(14 <= age <= 90){
+
+            alert('Votre age est compris entre 14 et 90ans') ;
+
+        }
+
+
+
+        /*  EXERCICE 22 : Vérifier à l'extérieur de la plage  */
+
+        let age = prompt('Saisissez votre age') ;
+
+        if(!(14 <= age <= 90)){
+
+        }alert('Votre age est pas compris entre 14 et 90ans') ;
+
+
+        /*  EXERCICE 22 bis : Vérifier à l'extérieur de la plage  */
+
+        let age = prompt('Saisissez votre age') ;
+
+        if(14 < age >= 90){
+
+        }alert('Votre age est pas compris entre 14 et 90ans') ;
+
+      
+
+    </script>
+
+</body>
+</html>

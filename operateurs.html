@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO opérateurs</title>
+</head>
+<body>
+    
+    <script>
+
+        /*  EXERCICE 6 : Les formes postfixes et préfixes   */
+
+        let a = 1 , b = 1 ;
+        let c = ++a ;  
+        let d = b++ ;
+
+        console.log(a) ; // la valeur finale de a est 2
+        console.log(b) ; // la valeur finale de b est 1
+        console.log(c) ; // la valeur finale de c est 2
+        console.log(d) ; // la valeur finale de d est 1
+
+
+
+        /*  EXERCICE 7 : Résultat d'affectation   */
+
+        let a = 2 ;
+        let x = 1 + (a *= 2) ; 
+
+        console.log(a) ; // la valeur finale de a est 4
+        console.log(x) ; // la valeur finale de x est 5
+
+
+
+        /*  EXERCICE 8 : Les conversions de type   */
+        
+        console.log("" + 1 + 0) ; // la valeur finale est 10
+	    console.log("" - 1 + 0) ; // la valeur dinale est -1
+	    console.log(true + false) ; // la valeur finale est 1
+	    console.log(6 / "3") ; // la valeur finale est 2
+	    console.log("2" * "3") ; // la valeur finale est 6
+	    console.log(4 + 5 + "px") ; // la valeur finale est 9px
+	    console.log("$" + 4 + 5) ; // la valeur finale est $45
+	    console.log("4" - 2) ; // la valeur finale est 2
+	    console.log("4px" - 2) ; // la valeur finale est NaN
+	    console.log(" -9 " + 5) ; // la valeur finale est -9 5
+	    console.log(" -9 " - 5) ; // la valeur finale est -14
+	    console.log(null + 1) ; // la valeur finale est 1 
+	    console.log(undefined + 1) ; // la valeur finale est NaN
+	    console.log(" \t \n" -2) ; // la valeur finale est -2
+
+
+
+        /*  EXERCICE 9 : Corrigez l'addition   */
+        
+        let a = prompt("First number ?") ; 
+        let b = prompt("Second number ?") ; 
+
+        a = 1 ;
+        b = 2 ;
+        
+        alert(a + b);
+
+
+
+        /*  EXERCICE 10 : Comparaison   */
+
+        console.log(5 > 4) ; // vrai 
+	    console.log("apple" > "pineapple") ; // false
+	    console.log("2" > "12") ;  // vrai 
+	    console.log(undefined == null) ;  // vrai
+	    console.log(undefined === null) ;  // false
+	    console.log(null == "\n0\n") ; // false
+	    console.log(null === +"\n0\n") ;  // false
+
+        
+
+
+    </script>
+
+</body>
+</html>

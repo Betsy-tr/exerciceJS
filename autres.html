@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO autres</title>
+</head>
+<body>
+    
+    <script>
+        
+        /*  EXERCICE 23 : Une question à propos de "if"   */
+
+	    if(-1 || 0) alert( 'first' ) ;
+        if(-1 && 0) alert( 'second' ) ;
+	    if(null || -1 && 1) alert( 'third' ) ;
+
+	    /* Les alerts first et third vont s'exécuter 
+		    la première expression a pour résultat -1
+		    la deuxième expression a pour résultat 0
+		    la deuxième expression a pour résultat 1
+	    */ 
+
+
+
+        /*  EXERCICE 24 : Check the login   */
+
+        let user = ['admin' , ' ' , 'user'] ;
+        let mdp = ['TheMaster' , 'TheUser' , ' '] ; 
+
+        user = prompt('Qui êtes-vous ?') ;
+
+        if(user === 'admin'){
+
+            mdp = prompt('Saisissez votre mot de passe') ;
+
+            if(mdp === 'TheMaster'){
+
+                alert('Bienvenue !') ;
+
+            }else if(mdp === 'TheUser'){
+
+                alert('Mot de passe incorrect !') ;
+
+            }else{
+
+                alert('Annuler') ;
+
+            }
+
+        }else if(user === ' '){
+
+            alert('Annuler') ; 
+
+        }else{
+
+            alert('Je ne vous connais pas') ;
+
+        }
+
+
+
+
+        /*  EXERCICE 25 : Dernière valeur de boucle  */
+
+        let i = 3 ;
+
+        while(i){
+
+            alert( i-- ) ;
+
+        }
+        // La dernière valeur afficher par ce code est 1 puisqu'il s'agit d'une décrémentation
+
+
+
+        /*  EXERCICE 26 : Quelles valeurs affiche la boucle while  */
+
+        let i = 0 ;
+
+        while(++i < 5) alert(i); // Forme prefixe
+
+        /* Les valeurs affichées par cette boucle :
+
+        *       première valeur = 1 
+        *       deuxième valeur = 2
+        *       troisième valeur = 3
+        *       quatrième valeur = 4
+        */
+
+	    let i = 0 ;
+
+        while(i++ < 5) alert(i); // Forme postfixe
+
+        /* Les valeurs affichées par cette boucle :
+
+        *       première valeur = 1 
+        *       deuxième valeur = 2
+        *       troisième valeur = 3
+        *       quatrième valeur = 4
+        *       cinquième valeur = 5
+        */
+
+	    // Conclusion les boucles affichent les mêmes valeurs mais la deuxième affiche une 5ème valeur contrairement à l'autre boucle
+
+
+
+        /*  EXERCICE 27 : Quelles valeurs sont affichées par la boucle "for"  */
+
+        for(let i = 0; i < 5; i++) alert(i); // Forme postfixe
+
+	    for(let i = 0; i < 5; ++i) alert(i); //Forme prefixe
+
+	    /* Les valeurs affichées par cette boucles :
+
+        *       première valeur = 0 
+        *       deuxième valeur = 1
+        *       troisième valeur = 2
+        *       quatrième valeur = 3
+        *       cinquième valeur = 4
+        * 
+        */
+
+	    // Conclusion les boucles affichent les mêmes valeurs mais la deuxième affiche une 5ème valeur contrairement à l'autre boucle
+
+
+
+        /*  EXERCICE 28 : Extraire les nombres pairs dans la boucle  */
+
+        for (let number = 2; number <= 10; number++) {
+
+            if (number % 2 == 0) {
+                
+                alert( number );
+            
+            }
+        }
+
+
+
+    </script>
+
+</body>
+</html>

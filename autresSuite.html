@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO autres Suite</title>
+</head>
+<body>
+    
+    <script>
+
+        /*  EXERCICE 29 : Remplacer "for" par "while"  */
+
+        for(let i = 0; i < 3; i++){
+
+            alert(`number ${i}!`)
+
+        }
+
+        // Modification en "while"
+
+        let i = 0 ;
+
+        while(i < 3){
+
+            alert(`number ${i}!`) ;
+
+            i++ ;
+        }
+
+
+        /*  EXERCICE 30 : Répéter jusqu'à ce que l'entrée soit correcte  */
+
+        let nombre = prompt('Saisissez un nombre supérieur à 100') ;
+
+        while(nombre < 100){
+
+            nombre = prompt('Saisissez à nouveau') ;
+
+        }
+
+
+        /*  EXERCICE 32 : Réécrire le "switch" dans un "if" */
+
+        browser = prompt('which browser are you using') ;
+
+        if(browser == 'Edge'){
+
+            alert("You've got the Edge") ;
+
+        }else if(browser == 'Chrome' || browser == 'Firefox'){
+
+            alert('Okey we support these browsers too') ;
+
+        }else if(browser == 'Safari' || browser == 'Opera'){
+
+            alert('Okey we support these browsers too') ;
+
+        }else{
+
+            alert('We hope that this page looks ok !') ;
+
+        }
+
+
+        /*  EXERCICE 33 : Réécrire le "if" dans un "switch" */
+
+        let a = +prompt('a?', '') ;
+
+        switch (a) {
+
+            case 0:
+
+                alert(0);
+    
+            break;
+
+            case 1:
+
+                alert(1);
+
+            break;
+
+            case 2:
+
+                alert(2);
+
+            break;
+
+            default: 3
+
+                alert(3) ;
+
+            break;
+        }
+
+
+
+        /*  EXERCICE 34 : Est ce que "else" est requis */
+
+        age = prompt('Saisissez votre age') ;
+
+        function checkAge(age){
+
+            if(age > 18){
+
+                alert(true);
+
+            }else{
+
+                alert(confirm('Did parents allow you ?'));
+            }
+        }
+        console.log(checkAge(age)) ;
+
+        // Si le "else" est supprimé la function fonctionnera différement 
+
+
+
+        /*  EXERCICE 35 : Réécrivez la fonction en utilisant "?" ou "||" */
+
+        age = prompt('Saisissez votre age') ;
+
+        age = (age > 18)?'true':confirm('Did parents allow you ?'); // Avec le ?
+
+        age = (age > 18)||confirm('Did parents allow you ?'); // Avec le ||
+
+
+
+        /*  EXERCICE 36 : Fonction min(a,b) */
+
+        a = prompt('Saisissez un nombre') ;
+        b = prompt('Saisissez un nombre') ;
+
+        function min(a,b){
+
+            if (a < b) {
+
+                alert(a);
+
+            } else {
+
+                alert(b);
+            }
+        }
+        console.log(min(a,b));
+
+
+        /*  EXERCICE 37 : Fonction pow(x,n) */
+
+        let x = prompt('Saisissez un nombre') ;
+        let n = prompt('Saisissez un nombre') ;
+
+        function pow(x,n){
+
+            let result = (x)*n ;
+
+            alert(result) ;
+        }
+        console.log(pow(x,n)) ;
+
+        
+
+       
+        
+
+        
+
+
+       
+       
+
+        
+
+
+
+        
+
+        
+
+        
+        
+
+    </script>
+
+</body>
+</html>
